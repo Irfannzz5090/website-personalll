@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joki Game & Voucher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #0f0f1b, #1c1c2b);
+      color: #fff;
+      padding-bottom: 5rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #1b1b2f;
+    }
+
+    .navbar input {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: none;
+      width: 300px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar ul li {
+      cursor: pointer;
+      color: #ccc;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+
+    .tabs button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .tabs .active {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .game-card {
+      background-color: #2a2a40;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: 0.3s;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .game-info {
+      padding: 0.75rem;
+    }
+
+    .game-info h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .game-info p {
+      font-size: 0.875rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <input type="text" placeholder="Cari Game atau Voucher">
+    <ul>
+      <li>Topup</li>
+      <li>Cek Transaksi</li>
+      <li>Leaderboard</li>
+      <li>Kalkulator</li>
+    </ul>
+  </nav>
+
+  <div class="tabs">
+    <button class="active">Top Up</button>
+    <button>Voucher</button>
+  </div>
+
+  <section class="games">
+    <a href="ending.html">
+    <div class="game-card">
+      <img src="https://www.vygaming.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fvygaming.id%2Fproduct%2Fstreet%20fight%20thumb.webp&w=1920&q=75" alt="Game">
+      <div class="game-info">
+        <h4>Street Fighter: Duel</h4>
+        <p>A PLUS ENTERTAINMENT</p>
+      </div>
+    </div>
+    </a>
+    <a href="ending.html">
+    <div class="game-card">
+      <img src="https://www.vygaming.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fvygaming.id%2Fproduct%2FMobile%20legend%20adventure%20thumb.webp&w=1920&q=75" alt="Game">
+      <div class="game-info">
+        <h4>Mobile Legends: Adventure</h4>
+        <p>MOONTON</p>
+      </div>
+    </div>
+    </a>
+    <a href="ending.html">
+    <div class="game-card">
+      <img src="https://www.vygaming.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fvygaming.id%2Fproduct%2Fthumb%20shining.webp&w=1920&q=75" alt="Game">
+      <div class="game-info">
+        <h4>Love Nikki</h4>
+        <p>Elex</p>
+      </div>
+    </div>
+    </a>
+    <a href="ending.html">
+    <div class="game-card">
+      <img src="https://www.vygaming.id/_next/image?url=https%3A%2F%2Fclient-cdn.bangjeff.com%2Fvygaming.id%2Fproduct%2Flove%20niki%20thumb.webp&w=1920&q=75" alt="Game">
+      <div class="game-info">
+        <h4>Shining Nikki</h4>
+        <p>PaperGames</p>
+      </div>
+    </div>
+    </a>
+    <!-- Tambahkan game lainnya sesuai kebutuhan -->
+  </section>
+</body>
+</html>

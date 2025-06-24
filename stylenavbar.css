@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.Navbar {
+    width: 100%;
+    background-color: #000;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-logo h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.navbar-logo .tec {
+    color: aqua;
+}
+
+.Navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.Navbar ul li {
+    position: relative;
+}
+
+.Navbar ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.25rem 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.Navbar ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: aqua;
+    transition: width 0.3s ease;
+}
+
+.Navbar ul li a:hover::before {
+    width: 100%;
+}
+
+.Navbar ul li a:hover {
+    color: aqua;
+}
+
+/* ===== HOME SECTION ===== */
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: url('Cartethyia.jpg') no-repeat center center/cover;
+}
+
+.home .isi {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.isi h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+.isi p {
+    font-size: 1.125rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.isi .cta {
+    display: inline-block;
+    background-color: chartreuse;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.isi .cta:hover {
+    background-color: #aad700;
+    color: #111;
+}
+
